@@ -11,7 +11,7 @@ const Restaurant = require('../model/modelRestaurant')
  restaurant.use(express.urlencoded({extended: false}));
 
  restaurant.get('/', (req, res) => {
-  res.send('In Routes')
+  res.send('In Route')
 })
 
  restaurant.post('/addRestaurant',controller.addRestaurant);

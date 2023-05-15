@@ -1,8 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb:localhost:27017', {useNewUrlParser: true,useUnifiedTopology:true});
-const { MongoClient, ObjectId } = require('mongodb');
-const express = require('express')
-const Restaurant= require('../model/modelRestaurant')
+const Restaurant= require('../model/modelRestaurant.js')
 
 
 const addRestaurant= async (req,res) => {

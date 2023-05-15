@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
-const session = require("express-session");
-const passport = require("passport");
+
 
 require("dotenv").config();
 const express = require("express");
-const addtourRoute= require('./routes/AddTourRoute')
+const addtRestaurant= require('./routes/addtRestaurant')
 const app = express()
 
 app.use((req, res, next) => {

@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
 
-require("dotenv").config();
+const dotenv = require("dotenv").config({ path: ".dotenv" });
 const express = require("express");
-const addtRestaurant= require('./routes/addtRestaurant')
+const restaurant= require('./routes/restaurant')
 const app = express()
 
 app.use((req, res, next) => {
@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 
 
-app.use('/Restaurant', addtRestaurant);
+app.use('/restaurant', restaurant);
 
 
 

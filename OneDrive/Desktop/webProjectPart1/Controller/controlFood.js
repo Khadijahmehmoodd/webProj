@@ -3,7 +3,7 @@ const Restaurant= require('../model/modelRestaurant.js')
 
 
 const addRestaurant= async (req,res) => {
-  console.log("Creation: ");
+  console.log("Creation : ");
   
   const {name,type,location,rate,image} = req.body;
 
@@ -19,7 +19,7 @@ const addRestaurant= async (req,res) => {
     console.error(err);
     });
 
-    console.log("RestaurantCreated!");
+    console.log("Restaurant Created!");
 
 
 }
